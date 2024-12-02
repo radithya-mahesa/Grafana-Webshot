@@ -1,0 +1,11 @@
+Dockerfile
+docker-compose.yml
+pic/
+.gitignore
+README.md
+.log
+.vscode
+.DS_Store
+*.log
+.env
+.env.example

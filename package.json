@@ -1,0 +1,17 @@
+{
+    "name": "webshot",
+    "version": "1.0.0",
+    "main": "webshot.js",
+    "scripts": {
+        "waTest": "node waTest.js"
+    },
+    "author": "Radithya",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "puppeteer": "^23.6.1",
+        "sharp": "^0.33.5"
+    },
+    "keywords": [],
+    "description": "This program can send grafana dashboard activity to whatsapp and telegram"
+}

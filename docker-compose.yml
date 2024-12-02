@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+  gauge-webshot:
+    container_name: gauge-webshot
+    hostname: c-d-r
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - radit_webshot:/app/pic
+
+  vps:
+    container_name: vps-webshot
+    hostname: dashboard-vps
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - radit_webshot:/app/pic
+    
+volumes:
+  radit_webshot:
